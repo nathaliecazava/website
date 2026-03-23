@@ -121,7 +121,34 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     04 · Serie Calle 3
+     04 · SETAI — Apt. 509
+     Residential · Advisory
+  ──────────────────────────────────────────── */
+  {
+    id: 'setai-509',
+    category: 'residential',
+    title: 'SETAI — Apt. 509',
+    typeEn: 'Residential · Advisory',
+    typeEs: 'Residencial · Asesoría',
+    location: 'Edificio SETAI, Medellín',
+    area: '44 m²',
+    scopeLabelEn: 'Scope',
+    scopeLabelEs: 'Alcance',
+    scopeEn: 'Advisory — Window System + Flooring',
+    scopeEs: 'Asesoría — Sistema de Ventanas + Pisos',
+    descEn: 'A focused intervention in a duplex apartment — two moves that changed how the space feels. The living room window system was re-engineered to reverse its opening direction, dissolving the boundary between balcony and living room into a single fluid zone. Across the full 44 m², a warm SPC wood-finish floor replaced the original, installed click-over-click with no demolition.',
+    descEs: 'Una intervención precisa en un apartamento dúplex — dos decisiones que cambiaron la percepción del espacio. El sistema de ventanas del salón fue reingeniado para invertir su dirección de apertura, disolviendo el límite entre balcón y sala en una sola zona fluida. En los 44 m² completos, un piso SPC de acabado en madera cálida reemplazó el original, instalado clic sobre clic sin demolición.',
+    images: [
+      { src: 'images/setai/Setai01.jpg', tag: null },
+      { src: 'images/setai/Setai02.jpg', tag: null },
+      { src: 'images/setai/Setai03.jpg', tag: null },
+      { src: 'images/setai/Setai04.jpg', tag: null },
+      { src: 'images/setai/Setai05.jpg', tag: null },
+    ],
+  },
+
+  /* ────────────────────────────────────────────
+     05 · Serie Calle 3
      Residential · Multi-Unit Design Program
   ──────────────────────────────────────────── */
   {
@@ -147,7 +174,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     05 · Aguas del Bosque — Apt 1026
+     06 · Aguas del Bosque — Apt 1026
      Residential · Full Renovation
   ──────────────────────────────────────────── */
   {
@@ -171,7 +198,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     06 · Bella Terra — Casa 78
+     07 · Bella Terra — Casa 78
      Residential · Interior Redesign
   ──────────────────────────────────────────── */
   {
@@ -195,7 +222,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     07 · Wei — Showroom & Taller
+     08 · Wei — Showroom & Taller
      Commercial · Showroom + Workshop
   ──────────────────────────────────────────── */
   {
@@ -219,7 +246,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     08 · Mompossina — Tienda & Taller
+     09 · Mompossina — Tienda & Taller
      Commercial · Retail + Workshop
   ──────────────────────────────────────────── */
   {
@@ -243,7 +270,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     09 · Elentari — Showroom & Taller
+     10 · Elentari — Showroom & Taller
      Commercial · Showroom + Workshop
   ──────────────────────────────────────────── */
   {
@@ -267,7 +294,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     10 · Mercante — Mall La Fe
+     11 · Mercante — Mall La Fe
      Commercial · Retail Space
   ──────────────────────────────────────────── */
   {
@@ -291,7 +318,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     11 · Restaurante Quereme
+     12 · Restaurante Quereme
      Hospitality · Art Direction
   ──────────────────────────────────────────── */
   {
