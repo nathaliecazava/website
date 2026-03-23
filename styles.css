@@ -244,7 +244,7 @@ nav.scrolled .nav-cta:hover {
   min-height: 600px;
   display: flex;
   align-items: flex-end;
-  padding: 0 var(--pad-x) clamp(3.5rem, 8vh, 7rem);
+  padding: clamp(5rem, 12vh, 9rem) var(--pad-x) clamp(3.5rem, 8vh, 7rem);
   overflow: hidden;
 }
 
