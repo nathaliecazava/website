@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Th Studio — All Projects · Medellín</title>
+  <meta name="description" content="Browse the full project portfolio of Th Studio — an interior design and art direction studio based in Medellín.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="projects-page">
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">TH.</span>
+      <span class="logo-sub" data-i18n="logo_sub">Art Direction &amp; Curation</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#portfolio" data-i18n="nav_work">Work</a></li>
+      <li><a href="index.html#philosophy" data-i18n="nav_philosophy">Philosophy</a></li>
+      <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+      <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+      <li><a href="index.html#contact" class="nav-cta" data-i18n="nav_cta">Get in touch</a></li>
+    </ul>
+    <div class="lang-switcher" role="group" aria-label="Language / Idioma">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-divider" aria-hidden="true">/</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ PAGE HEADER ═══════════════════ -->
+  <section class="projects-page-header">
+    <div class="projects-page-header-inner">
+      <p class="section-label-light" data-i18n="projects_label">Portfolio</p>
+      <h1 class="projects-page-title" data-i18n-html="projects_title">Every space<br>we've shaped.</h1>
+      <div class="projects-filter-bar" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all"          data-i18n="filter_all">All</button>
+        <button class="filter-btn"        data-filter="residential"  data-i18n="filter_residential">Residential</button>
+        <button class="filter-btn"        data-filter="commercial"   data-i18n="filter_commercial">Commercial</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS GRID ═══════════════════ -->
+  <section class="projects-page-section">
+    <div class="projects-page-grid" id="projects-grid">
+      <!-- Cards injected by projects.js -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer>
+    <span class="footer-logo">TH Studio</span>
+    <p class="footer-copy" data-i18n="footer_copy">© 2026 Th Studio. All rights reserved.</p>
+    <span class="footer-location">
+      <svg width="10" height="13" viewBox="0 0 10 13" fill="none" aria-hidden="true">
+        <path d="M5 12S1 8.314 1 5a4 4 0 0 1 8 0c0 3.314-4 7-4 7Z" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <circle cx="5" cy="5" r="1.5" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+      </svg>
+      Medellín, Colombia
+    </span>
+  </footer>
+
+  <script src="projects-data.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>

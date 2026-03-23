@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Th Studio — Interior Design & Art Direction · Medellín</title>
+  <meta name="description" content="An interior design and art direction studio based in Medellín. We design residential spaces with soul and commercial environments with narrative.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark">TH.</span>
+      <span class="logo-sub" data-i18n="logo_sub">Art Direction &amp; Curation</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#portfolio" data-i18n="nav_work">Work</a></li>
+      <li><a href="#philosophy" data-i18n="nav_philosophy">Philosophy</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#services" data-i18n="nav_services">Services</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav_cta">Get in touch</a></li>
+    </ul>
+    <div class="lang-switcher" role="group" aria-label="Language / Idioma">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-divider" aria-hidden="true">/</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Interior Design &amp; Art Direction · Medellín, Colombia</p>
+      <h1 class="hero-title" data-i18n-html="hero_title">
+        Every space<br>
+        has a story.<br>
+        <em>We write it.</em>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        An interior design and art direction studio based in Medellín.
+        We design residential spaces with soul and commercial environments with narrative —
+        always grounded in research, always built to last.
+      </p>
+      <a href="#portfolio" class="btn btn-outline-light">
+        <span data-i18n="hero_cta">View our work</span>
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+          <path d="M11 1l4 4-4 4M15 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span data-i18n="hero_scroll">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PORTFOLIO ═══════════════════ -->
+  <section id="portfolio" class="section-portfolio">
+    <div class="portfolio-header">
+      <div>
+        <p class="section-label" data-i18n="portfolio_label">Selected Work</p>
+        <h2 class="section-title" data-i18n-html="portfolio_title">Spaces designed<br>with intent.</h2>
+      </div>
+      <p class="portfolio-header-sub" data-i18n="portfolio_sub">
+        A curated selection of residential transformations and commercial environments —
+        each one built on research, driven by concept, and delivered with craft.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ── Project 01 ── -->
+      <article class="project" data-animate>
+        <div class="project-visual">
+          <div class="comparison-wrap" data-comparison>
+            <img
+              src="https://source.unsplash.com/VLRzyheT45g/1200x900"
+              alt="Arrecife — after renovation"
+              class="img-after"
+              loading="lazy"
+            >
+            <div class="comparison-before-wrap">
+              <img
+                src="https://source.unsplash.com/mD2atAC5GxE/1200x900"
+                alt="Arrecife — before renovation"
+                loading="lazy"
+              >
+            </div>
+            <span class="comparison-label label-after" data-i18n="comparison_after">After</span>
+            <span class="comparison-label label-before" data-i18n="comparison_before">Before</span>
+            <div class="comparison-handle" data-handle>
+              <div class="handle-btn" aria-label="Drag to compare before and after">
+                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" aria-hidden="true">
+                  <path d="M1 5h18M5 1L1 5l4 4M15 1l4 4-4 4" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="comparison-hint" aria-hidden="true" data-i18n="comparison_drag">Drag to compare</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-number" data-i18n="proj1_num">Project 01</p>
+          <h3 class="project-title">Arrecife</h3>
+          <p class="project-type" data-i18n="proj1_type">Residential · Full Renovation</p>
+          <p class="project-desc" data-i18n="proj1_desc">
+            A conventional apartment stripped back and rebuilt as an industrial sanctuary for a young family.
+            Exposed ceiling cassettes, pipe-mounted lighting, and a cement accent wall give the living room
+            raw edge, while a mosaic-tiled kitchen and an elevated bedroom platform keep the space grounded in craft.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_location">Location</p>
+              <p class="meta-value">Medellín</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_style">Style</p>
+              <p class="meta-value" data-i18n="proj1_val_style">Industrial · Eclectic</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_scope">Scope</p>
+              <p class="meta-value" data-i18n="proj1_val_scope">Full Renovation</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Project 02 ── -->
+      <article class="project project-reverse" data-animate>
+        <div class="project-visual">
+          <div class="comparison-wrap" data-comparison>
+            <img
+              src="https://source.unsplash.com/XU_ODlSO9ac/1200x900"
+              alt="Urban 1204 — after renovation"
+              class="img-after"
+              loading="lazy"
+            >
+            <div class="comparison-before-wrap">
+              <img
+                src="https://source.unsplash.com/vBBr-MOWhaY/1200x900"
+                alt="Urban 1204 — before renovation"
+                loading="lazy"
+              >
+            </div>
+            <span class="comparison-label label-after" data-i18n="comparison_after">After</span>
+            <span class="comparison-label label-before" data-i18n="comparison_before">Before</span>
+            <div class="comparison-handle" data-handle>
+              <div class="handle-btn" aria-label="Drag to compare before and after">
+                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" aria-hidden="true">
+                  <path d="M1 5h18M5 1L1 5l4 4M15 1l4 4-4 4" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="comparison-hint" aria-hidden="true" data-i18n="comparison_drag">Drag to compare</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-number" data-i18n="proj2_num">Project 02</p>
+          <h3 class="project-title">Urban 1204</h3>
+          <p class="project-type" data-i18n="proj2_type">Residential · Full Renovation</p>
+          <p class="project-desc" data-i18n="proj2_desc">
+            A full-floor apartment redesigned around one idea: Medellín as both city and forest.
+            Artisanal textures — graniplast walls, lime wash bedrooms, hand-laid wood bolillos with
+            integrated lighting — create a layered warmth that reads contemporary but feels handmade.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_location">Location</p>
+              <p class="meta-value">Medellín</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_style">Style</p>
+              <p class="meta-value" data-i18n="proj2_val_style">Contemporary · Natural</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_scope">Scope</p>
+              <p class="meta-value" data-i18n="proj2_val_scope">Full Renovation</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── Project 03 ── -->
+      <article class="project" data-animate>
+        <div class="project-visual">
+          <div class="comparison-wrap" data-comparison>
+            <img
+              src="https://source.unsplash.com/KXr-fBrUFms/1200x900"
+              alt="Cinnamon — after renovation"
+              class="img-after"
+              loading="lazy"
+            >
+            <div class="comparison-before-wrap">
+              <img
+                src="https://source.unsplash.com/Tb4bUf6z9gI/1200x900"
+                alt="Cinnamon — before renovation"
+                loading="lazy"
+              >
+            </div>
+            <span class="comparison-label label-after" data-i18n="comparison_after">After</span>
+            <span class="comparison-label label-before" data-i18n="comparison_before">Before</span>
+            <div class="comparison-handle" data-handle>
+              <div class="handle-btn" aria-label="Drag to compare before and after">
+                <svg width="20" height="10" viewBox="0 0 20 10" fill="none" aria-hidden="true">
+                  <path d="M1 5h18M5 1L1 5l4 4M15 1l4 4-4 4" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="comparison-hint" aria-hidden="true" data-i18n="comparison_drag">Drag to compare</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-number" data-i18n="proj3_num">Project 03</p>
+          <h3 class="project-title">Cinnamon</h3>
+          <p class="project-type" data-i18n="proj3_type">Residential · Full Renovation</p>
+          <p class="project-desc" data-i18n="proj3_desc">
+            A compact apartment given a clear identity through an unlikely pairing: bohemian warmth
+            meets Bauhaus discipline. Honey tones, exposed brick, olive accents, and cement floors
+            create an interior that feels organic and considered in equal measure.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_location">Location</p>
+              <p class="meta-value">Medellín</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_style">Style</p>
+              <p class="meta-value" data-i18n="proj3_val_style">Bohemian Bauhaus</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label" data-i18n="meta_scope">Scope</p>
+              <p class="meta-value" data-i18n="proj3_val_scope">Full Renovation</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="portfolio-view-all-row">
+      <a href="projects.html" class="btn btn-outline-light">
+        <span data-i18n="portfolio_view_all">View all projects</span>
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+          <path d="M11 1l4 4-4 4M15 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PHILOSOPHY ═══════════════════ -->
+  <section id="philosophy" class="section-philosophy">
+    <div class="philosophy-inner">
+      <p class="section-label" data-i18n="philosophy_label">Design Philosophy</p>
+
+      <blockquote class="philosophy-quote" data-i18n="philosophy_quote">
+        "We don't start with finishes — we start with questions. Every project begins
+        with understanding how the client actually lives, works, or gathers. That insight
+        drives every decision that follows."
+      </blockquote>
+
+      <div class="philosophy-grid">
+
+        <div class="philosophy-item" data-animate>
+          <p class="philosophy-num">01</p>
+          <h3 data-i18n="phil1_title">Order as creative freedom</h3>
+          <p data-i18n="phil1_body">
+            Methodology isn't a constraint — it's what makes genuine creativity possible.
+            Every project follows a defined process, every phase has its deliverables,
+            every decision has its foundation. Without structure, there is no consistency;
+            without consistency, there is no quality.
+          </p>
+        </div>
+
+        <div class="philosophy-item" data-animate>
+          <p class="philosophy-num">02</p>
+          <h3 data-i18n="phil2_title">Question what's established</h3>
+          <p data-i18n="phil2_body">
+            If something has always been done a certain way, that's precisely the reason
+            to ask whether there's a better approach. We build original methods grounded
+            in proven frameworks — not convention for convention's sake.
+          </p>
+        </div>
+
+        <div class="philosophy-item" data-animate>
+          <p class="philosophy-num">03</p>
+          <h3 data-i18n="phil3_title">The person before the space</h3>
+          <p data-i18n="phil3_body">
+            For residential clients, we deliberately avoid reference photos at the start.
+            Instead, we ask about sensory preferences and daily habits — building the concept
+            from who the person is, not what they've seen elsewhere.
+          </p>
+        </div>
+
+        <div class="philosophy-item" data-animate>
+          <p class="philosophy-num">04</p>
+          <h3 data-i18n="phil4_title">Behavior informs design</h3>
+          <p data-i18n="phil4_body">
+            Design doesn't exist in a vacuum. Understanding how people live, how habits are
+            shifting, and what that means for spaces and experiences is the foundation of
+            every concept we develop — residential or commercial.
+          </p>
+        </div>
+
+        <div class="philosophy-item" data-animate>
+          <p class="philosophy-num">05</p>
+          <h3 data-i18n="phil5_title">Medellín as creative foundation</h3>
+          <p data-i18n="phil5_body">
+            Medellín is not just where we work — it's part of how we think. The city's
+            texture, color, and creative energy appear in the work, even when the brief
+            doesn't explicitly ask for it. Proud, without making it a cliché.
+          </p>
+        </div>
+
+        <div class="philosophy-item" data-animate>
+          <p class="philosophy-num">06</p>
+          <h3 data-i18n="phil6_title">Transparency builds trust</h3>
+          <p data-i18n="phil6_body">
+            Clients who understand the process trust it. We're transparent about budgets,
+            trade-offs, and timelines. Our responsibility is to inform clearly and honestly;
+            the final decision always belongs to the client.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section id="about" class="section-about">
+    <div class="about-inner">
+
+      <div class="about-image-wrap" data-animate>
+        <!-- Replace this placeholder with your professional photo -->
+        <img
+          src="https://picsum.photos/seed/th-studio-founder/800/1067"
+          alt="Th Studio — Interior Design & Art Direction, Medellín"
+          loading="lazy"
+        >
+        <div class="about-image-tag">
+          Th Studio<br>Medellín, Colombia
+        </div>
+      </div>
+
+      <div class="about-content" data-animate>
+        <p class="section-label" data-i18n="about_label">About the Studio</p>
+        <h2 class="section-title section-title-light" data-i18n-html="about_title">
+          Spaces built on research,<br>driven by story.
+        </h2>
+
+        <p data-i18n="about_p1">
+          Th Studio is an interior design and art direction practice based in Medellín.
+          We work across two distinct lines: residential spaces designed around how people
+          actually live, and commercial environments built on narrative strategy for the
+          hospitality sector.
+        </p>
+        <p data-i18n="about_p2">
+          With over five years of practice in interior design and art direction, the studio
+          combines immersive client discovery, research-backed concept development, and a
+          rigorous project methodology to deliver results that are both visually striking
+          and deeply functional.
+        </p>
+        <p data-i18n="about_p3">
+          On the residential side, we work with two profiles: clients who want a space
+          that genuinely reflects who they are — personal, layered, livable — and clients
+          who prioritize visual impact above all else. Both deserve the same craft.
+          What changes is the process.
+        </p>
+        <p data-i18n="about_p4">
+          For commercial and hospitality projects, we build narrative universes from
+          ethnographic research, where every decision — space, identity, menu, music,
+          experience — flows from a central concept rooted in the real people behind
+          the project.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <p class="stat-number">5+</p>
+            <p class="stat-label" data-i18n-html="stat1_label">Years of<br>practice</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">2</p>
+            <p class="stat-label" data-i18n-html="stat2_label">Service<br>lines</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">MDE</p>
+            <p class="stat-label" data-i18n-html="stat3_label">Based in<br>Medellín</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SERVICES ═══════════════════ -->
+  <section id="services" class="section-services">
+    <p class="section-label" data-i18n="services_label">Services</p>
+    <h2 class="section-title" data-i18n-html="services_title">Two lines.<br>One standard.</h2>
+
+    <div class="services-grid">
+
+      <div class="service-card" data-animate>
+        <p class="service-tag" data-i18n="svc1_tag">01 — Residential</p>
+        <h3 data-i18n-html="svc1_title">Interior Design<br>&amp; Renovation</h3>
+        <p class="service-sub" data-i18n="svc1_sub">Spaces designed around how you live</p>
+        <p data-i18n="svc1_body">
+          From full architectural renovations to design advisory, we work with homeowners
+          in Medellín who want spaces that feel genuinely theirs — not trend-driven, not
+          generic. Every project starts with understanding, not assumptions.
+        </p>
+        <ul class="service-list">
+          <li data-i18n="svc1_li1">Design advisory — new look without structural changes</li>
+          <li data-i18n="svc1_li2">Full design + renovation with architectural modifications</li>
+          <li data-i18n="svc1_li3">Custom furniture, lighting &amp; material specification</li>
+          <li data-i18n="svc1_li4">Construction execution management</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-dark">
+          <span data-i18n="svc_cta">Start a conversation</span>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+            <path d="M11 1l4 4-4 4M15 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="service-card" data-animate>
+        <p class="service-tag" data-i18n="svc2_tag">02 — Commercial</p>
+        <h3 data-i18n-html="svc2_title">Art Direction<br>&amp; Th Studio</h3>
+        <p class="service-sub" data-i18n="svc2_sub">Narrative environments for hospitality</p>
+        <p data-i18n="svc2_body">
+          For restaurants, boutique hotels, and commercial spaces that want more than
+          aesthetics — a concept that differentiates, and a story their audience
+          remembers. Built from real listening, not mood boards borrowed from elsewhere.
+        </p>
+        <ul class="service-list">
+          <li data-i18n="svc2_li1">Ethnographic insight capture — founders, team &amp; investors</li>
+          <li data-i18n="svc2_li2">Narrative concept development</li>
+          <li data-i18n="svc2_li3">Creative direction across space, identity &amp; experience</li>
+          <li data-i18n="svc2_li4">Strategic roadmap for all brand touchpoints</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-dark">
+          <span data-i18n="svc_cta">Start a conversation</span>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+            <path d="M11 1l4 4-4 4M15 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section id="contact" class="section-contact">
+    <div class="contact-inner">
+      <p class="section-label section-label-light" data-i18n="contact_label">Get in Touch</p>
+      <h2 class="contact-title" data-i18n-html="contact_title">
+        Let's turn your<br>space into a story.
+      </h2>
+      <p class="contact-sub" data-i18n="contact_sub">
+        Based in Medellín, working across Colombia. Every project begins with a conversation —
+        no commitment required.
+      </p>
+      <div class="contact-links">
+        <!-- Update these with your actual email and WhatsApp number -->
+        <a href="mailto:hola@thstudio.co" class="btn btn-outline-light">
+          <span data-i18n="contact_email">Send an email</span>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+            <path d="M11 1l4 4-4 4M15 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/" class="btn btn-outline-light">
+          <span data-i18n="contact_whatsapp">WhatsApp</span>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+            <path d="M11 1l4 4-4 4M15 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer>
+    <span class="footer-logo">TH Studio</span>
+    <p class="footer-copy" data-i18n="footer_copy">© 2026 Th Studio. All rights reserved.</p>
+    <span class="footer-location">
+      <svg width="10" height="13" viewBox="0 0 10 13" fill="none" aria-hidden="true">
+        <path d="M5 12S1 8.314 1 5a4 4 0 0 1 8 0c0 3.314-4 7-4 7Z" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <circle cx="5" cy="5" r="1.5" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+      </svg>
+      Medellín, Colombia
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
