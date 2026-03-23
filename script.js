@@ -179,8 +179,8 @@ const translations = {
     proj1_type:          'Residential · Full Renovation',
     proj1_desc:          'A conventional apartment stripped back and rebuilt as an industrial sanctuary for a young family. Exposed ceiling cassettes, pipe-mounted lighting, and a cement accent wall give the living room raw edge, while a mosaic-tiled kitchen and an elevated bedroom platform keep the space grounded in craft.',
     proj2_num:           'Project 02',
-    proj2_type:          'Residential · Full Renovation',
-    proj2_desc:          'A full-floor apartment redesigned around one idea: Medellín as both city and forest. Artisanal textures — graniplast walls, lime wash bedrooms, hand-laid wood bolillos with integrated lighting — create a layered warmth that reads contemporary but feels handmade.',
+    proj2_type:          'Residential · Advisory',
+    proj2_desc:          'A focused intervention in a duplex apartment — two moves that changed how the space feels. The living room window system was re-engineered to reverse its opening direction, dissolving the boundary between balcony and living room into a single fluid zone. Across the full 44 m², a warm SPC wood-finish floor replaced the original, installed click-over-click with no demolition.',
     proj3_num:           'Project 03',
     proj3_type:          'Residential · Full Renovation',
     proj3_desc:          'A compact apartment given a clear identity through an unlikely pairing: bohemian warmth meets Bauhaus discipline. Honey tones, exposed brick, olive accents, and cement floors create an interior that feels organic and considered in equal measure.',
@@ -190,8 +190,7 @@ const translations = {
     meta_style:          'Style',
     proj1_val_style:     'Industrial · Eclectic',
     proj1_val_scope:     'Full Renovation',
-    proj2_val_style:     'Contemporary · Natural',
-    proj2_val_scope:     'Full Renovation',
+    proj2_val_scope:     'Advisory — Window System + Flooring',
     proj3_val_style:     'Bohemian Bauhaus',
     proj3_val_scope:     'Full Renovation',
     comparison_after:    'After',
@@ -270,8 +269,8 @@ const translations = {
     proj1_type:          'Residencial · Renovación Completa',
     proj1_desc:          'Un apartamento convencional desmontado y reconstruido como santuario industrial para una familia joven. Casetes de techo expuestos, iluminación sobre tuberías y un muro de cemento le dan al salón un carácter crudo, mientras que la cocina con mosaico y la plataforma elevada del dormitorio anclan el espacio en el oficio.',
     proj2_num:           'Proyecto 02',
-    proj2_type:          'Residencial · Renovación Completa',
-    proj2_desc:          'Un apartamento de piso completo rediseñado alrededor de una sola idea: Medellín como ciudad y como bosque. Texturas artesanales — paredes de graniplasto, dormitorios en cal, bolillos de madera con iluminación integrada — crean una calidez en capas que se lee contemporánea pero se siente hecha a mano.',
+    proj2_type:          'Residencial · Asesoría',
+    proj2_desc:          'Una intervención precisa en un apartamento dúplex — dos decisiones que cambiaron la percepción del espacio. El sistema de ventanas del salón fue reingeniado para invertir su dirección de apertura, disolviendo el límite entre balcón y sala en una sola zona fluida. En los 44 m² completos, un piso SPC de acabado en madera cálida reemplazó el original, instalado clic sobre clic sin demolición.',
     proj3_num:           'Proyecto 03',
     proj3_type:          'Residencial · Renovación Completa',
     proj3_desc:          'Un apartamento compacto con una identidad clara a través de una pareja inesperada: calidez bohemia y disciplina Bauhaus. Tonos miel, ladrillo expuesto, acentos oliva y pisos de cemento crean un interior que se siente orgánico y reflexivo a partes iguales.',
@@ -281,8 +280,7 @@ const translations = {
     meta_style:          'Estilo',
     proj1_val_style:     'Industrial · Ecléctico',
     proj1_val_scope:     'Renovación Completa',
-    proj2_val_style:     'Contemporáneo · Natural',
-    proj2_val_scope:     'Renovación Completa',
+    proj2_val_scope:     'Asesoría — Sistema de Ventanas + Pisos',
     proj3_val_style:     'Bohemio Bauhaus',
     proj3_val_scope:     'Renovación Completa',
     comparison_after:    'Después',
@@ -400,3 +398,33 @@ langBtns.forEach(btn => {
   applyTranslations(saved);
   langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === saved));
 })();
+
+// ─── Hero carousels ────────────────────────────────────
+
+function initCarousel(container) {
+  const track = container.querySelector('.carousel-track');
+  const slides = [...container.querySelectorAll('.carousel-slide')];
+  const dots = [...container.querySelectorAll('.carousel-dot')];
+  const prevBtn = container.querySelector('.carousel-prev');
+  const nextBtn = container.querySelector('.carousel-next');
+  if (slides.length <= 1) { prevBtn?.remove(); nextBtn?.remove(); return; }
+  let current = 0;
+  let touchStartX = 0;
+  function goTo(n) {
+    current = ((n % slides.length) + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+  prevBtn?.addEventListener('click', (e) => { e.stopPropagation(); goTo(current - 1); });
+  nextBtn?.addEventListener('click', (e) => { e.stopPropagation(); goTo(current + 1); });
+  dots.forEach((d, i) => d.addEventListener('click', (e) => { e.stopPropagation(); goTo(i); }));
+  container.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  container.addEventListener('touchend', (e) => {
+    if (!container.isConnected) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) goTo(current + (dx > 0 ? -1 : 1));
+  });
+  goTo(0);
+}
+
+document.querySelectorAll('[data-carousel]').forEach(initCarousel);

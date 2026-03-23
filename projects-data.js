@@ -73,55 +73,7 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     02 · Urban 1204
-     Residential · Full Renovation
-  ──────────────────────────────────────────── */
-  {
-    id: 'urban-1204',
-    category: 'residential',
-    title: 'Urban 1204',
-    typeEn: 'Residential · Full Renovation',
-    typeEs: 'Residencial · Renovación Completa',
-    location: 'Medellín',
-    area: null,
-    scopeLabelEn: 'Scope',
-    scopeLabelEs: 'Alcance',
-    scopeEn: 'Full Renovation — Kitchen, Living, Bedrooms (×2), Bathroom, Terrace',
-    scopeEs: 'Renovación Completa — Cocina, Sala, Habitaciones (×2), Baño, Terraza',
-    descEn: 'A full-floor apartment redesigned around one idea: Medellín as both city and forest. Artisanal textures — graniplast walls, lime wash bedrooms, hand-laid wood bolillos with integrated lighting — create a layered warmth that reads contemporary but feels handmade. Green runs through every zone as the unifying thread.',
-    descEs: 'Un apartamento de piso completo rediseñado alrededor de una sola idea: Medellín como ciudad y como bosque. Texturas artesanales — paredes de graniplasto, dormitorios en cal, bolillos de madera con iluminación integrada — crean una calidez en capas que se lee contemporánea pero se siente hecha a mano. El verde recorre cada zona como hilo unificador.',
-    images: [
-      { src: 'https://source.unsplash.com/XU_ODlSO9ac/1200x900', tag: 'after'  },
-      { src: 'https://source.unsplash.com/vBBr-MOWhaY/1200x900', tag: 'before' },
-    ],
-  },
-
-  /* ────────────────────────────────────────────
-     03 · Cinnamon
-     Residential · Full Renovation
-  ──────────────────────────────────────────── */
-  {
-    id: 'cinnamon',
-    category: 'residential',
-    title: 'Cinnamon',
-    typeEn: 'Residential · Full Renovation',
-    typeEs: 'Residencial · Renovación Completa',
-    location: 'Medellín',
-    area: null,
-    scopeLabelEn: 'Scope',
-    scopeLabelEs: 'Alcance',
-    scopeEn: 'Full Renovation — Kitchen, Living, Bedroom, Bathroom',
-    scopeEs: 'Renovación Completa — Cocina, Sala, Habitación, Baño',
-    descEn: 'A compact apartment given a clear identity through an unlikely pairing: bohemian warmth meets Bauhaus discipline. Honey tones, exposed brick, olive accents, and cement floors create an interior that feels organic and considered in equal measure — proof that a small footprint can carry a strong point of view.',
-    descEs: 'Un apartamento compacto con una identidad clara a través de una pareja inesperada: calidez bohemia y disciplina Bauhaus. Tonos miel, ladrillo expuesto, acentos oliva y pisos de cemento crean un interior que se siente orgánico y reflexivo a partes iguales — prueba de que una huella pequeña puede sostener un punto de vista fuerte.',
-    images: [
-      { src: 'https://source.unsplash.com/KXr-fBrUFms/1200x900', tag: 'after'  },
-      { src: 'https://source.unsplash.com/Tb4bUf6z9gI/1200x900', tag: 'before' },
-    ],
-  },
-
-  /* ────────────────────────────────────────────
-     04 · SETAI — Apt. 509
+     02 · SETAI — Apt. 509
      Residential · Advisory
   ──────────────────────────────────────────── */
   {
@@ -144,6 +96,53 @@ const PROJECTS = [
       { src: 'images/setai/Setai03.jpg', tag: null },
       { src: 'images/setai/Setai04.jpg', tag: null },
       { src: 'images/setai/Setai05.jpg', tag: null },
+    ],
+  },
+
+  /* ────────────────────────────────────────────
+     03 · Cinnamon
+     Residential · Full Renovation
+  ──────────────────────────────────────────── */
+  {
+    id: 'cinnamon',
+    category: 'residential',
+    title: 'Cinnamon',
+    typeEn: 'Residential · Full Renovation',
+    typeEs: 'Residencial · Renovación Completa',
+    location: 'Medellín',
+    area: null,
+    scopeLabelEn: 'Scope',
+    scopeLabelEs: 'Alcance',
+    scopeEn: 'Full Renovation — Kitchen, Living, Bedroom, Bathroom',
+    scopeEs: 'Renovación Completa — Cocina, Sala, Habitación, Baño',
+    descEn: 'A compact apartment given a clear identity through an unlikely pairing: bohemian warmth meets Bauhaus discipline. Honey tones, exposed brick, olive accents, and cement floors create an interior that feels organic and considered in equal measure — proof that a small footprint can carry a strong point of view.',
+    descEs: 'Un apartamento compacto con una identidad clara a través de una pareja inesperada: calidez bohemia y disciplina Bauhaus. Tonos miel, ladrillo expuesto, acentos oliva y pisos de cemento crean un interior que se siente orgánico y reflexivo a partes iguales — prueba de que una huella pequeña puede sostener un punto de vista fuerte.',
+    images: [
+      { src: 'https://source.unsplash.com/KXr-fBrUFms/1200x900', tag: null },
+    ],
+  },
+
+  /* ────────────────────────────────────────────
+     04 · Urban 1204
+     Residential · Full Renovation
+  ──────────────────────────────────────────── */
+  {
+    id: 'urban-1204',
+    category: 'residential',
+    title: 'Urban 1204',
+    typeEn: 'Residential · Full Renovation',
+    typeEs: 'Residencial · Renovación Completa',
+    location: 'Medellín',
+    area: null,
+    scopeLabelEn: 'Scope',
+    scopeLabelEs: 'Alcance',
+    scopeEn: 'Full Renovation — Kitchen, Living, Bedrooms (×2), Bathroom, Terrace',
+    scopeEs: 'Renovación Completa — Cocina, Sala, Habitaciones (×2), Baño, Terraza',
+    descEn: 'A full-floor apartment redesigned around one idea: Medellín as both city and forest. Artisanal textures — graniplast walls, lime wash bedrooms, hand-laid wood bolillos with integrated lighting — create a layered warmth that reads contemporary but feels handmade. Green runs through every zone as the unifying thread.',
+    descEs: 'Un apartamento de piso completo rediseñado alrededor de una sola idea: Medellín como ciudad y como bosque. Texturas artesanales — paredes de graniplasto, dormitorios en cal, bolillos de madera con iluminación integrada — crean una calidez en capas que se lee contemporánea pero se siente hecha a mano. El verde recorre cada zona como hilo unificador.',
+    images: [
+      { src: 'https://source.unsplash.com/XU_ODlSO9ac/1200x900', tag: null },
+      { src: 'https://source.unsplash.com/vBBr-MOWhaY/1200x900', tag: null },
     ],
   },
 

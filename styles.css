@@ -466,6 +466,14 @@ nav.scrolled .nav-cta:hover {
   display: block;
 }
 
+/* ─── Hero carousel wrapper ─── */
+
+.project-carousel-wrap {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
 /* ─── Before / After Comparison Slider ─── */
 
 .comparison-wrap {
