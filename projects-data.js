@@ -100,25 +100,32 @@ const PROJECTS = [
   },
 
   /* ────────────────────────────────────────────
-     03 · Cinnamon
-     Residential · Full Renovation
+     03 · Apto 708
+     Residential · Interior Design
   ──────────────────────────────────────────── */
   {
-    id: 'cinnamon',
+    id: 'apto-708',
     category: 'residential',
-    title: 'Cinnamon',
-    typeEn: 'Residential · Full Renovation',
-    typeEs: 'Residencial · Renovación Completa',
-    location: 'Medellín',
+    title: 'Apto 708',
+    typeEn: 'Residential · Interior Design',
+    typeEs: 'Residencial · Diseño de Interiores',
+    location: 'Edificio 3-33, Medellín',
     area: null,
     scopeLabelEn: 'Scope',
     scopeLabelEs: 'Alcance',
-    scopeEn: 'Full Renovation — Kitchen, Living, Bedroom, Bathroom',
-    scopeEs: 'Renovación Completa — Cocina, Sala, Habitación, Baño',
-    descEn: 'A compact apartment given a clear identity through an unlikely pairing: bohemian warmth meets Bauhaus discipline. Honey tones, exposed brick, olive accents, and cement floors create an interior that feels organic and considered in equal measure — proof that a small footprint can carry a strong point of view.',
-    descEs: 'Un apartamento compacto con una identidad clara a través de una pareja inesperada: calidez bohemia y disciplina Bauhaus. Tonos miel, ladrillo expuesto, acentos oliva y pisos de cemento crean un interior que se siente orgánico y reflexivo a partes iguales — prueba de que una huella pequeña puede sostener un punto de vista fuerte.',
+    scopeEn: 'Design + Execution — Living Room, Bedroom, Kitchen',
+    scopeEs: 'Diseño + Ejecución — Sala, Habitación, Cocina',
+    descEn: 'A warm Nordic-tropical palette transforms a compact apartment into a slow-living retreat. Royal blue anchors the bedroom — wall, closet, zócalo — while a hand-applied reboque finish in walnut gives the living room\'s main wall a quiet depth. Peach tones soften transitions at corridors and bathroom doors. Hamaca hooks on the balcón wall are the final punctuation: this is a home designed for staying, not just passing through.',
+    descEs: 'Una paleta nórdico-tropical transforma un apartamento compacto en un refugio para la vida lenta. El azul real ancla la habitación — pared, closet, zócalo — mientras que un reboque aplicado a mano en nogal le da a la pared principal de la sala una profundidad tranquila. Los tonos durazno suavizan las transiciones en pasillos y puertas del baño. Los ganchos de hamaca en la pared del balcón son la puntuación final: un hogar diseñado para quedarse, no solo para pasar.',
     images: [
-      { src: 'https://source.unsplash.com/KXr-fBrUFms/1200x900', tag: null },
+      { src: 'images/apto-708/Apto708-01.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-02.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-03.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-04.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-05.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-06.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-07.jpg', tag: null },
+      { src: 'images/apto-708/Apto708-08.jpg', tag: null },
     ],
   },
 
@@ -337,6 +344,29 @@ const PROJECTS = [
     images: [
       { src: 'https://source.unsplash.com/Wzo_34cS5bA/1200x900', tag: 'after'  },
       { src: 'https://source.unsplash.com/tkfV4_59gxw/1200x900', tag: 'before' },
+    ],
+  },
+
+  /* ────────────────────────────────────────────
+     13 · Cinnamon
+     Residential · Full Renovation
+  ──────────────────────────────────────────── */
+  {
+    id: 'cinnamon',
+    category: 'residential',
+    title: 'Cinnamon',
+    typeEn: 'Residential · Full Renovation',
+    typeEs: 'Residencial · Renovación Completa',
+    location: 'Medellín',
+    area: null,
+    scopeLabelEn: 'Scope',
+    scopeLabelEs: 'Alcance',
+    scopeEn: 'Full Renovation — Kitchen, Living, Bedroom, Bathroom',
+    scopeEs: 'Renovación Completa — Cocina, Sala, Habitación, Baño',
+    descEn: 'A compact apartment given a clear identity through an unlikely pairing: bohemian warmth meets Bauhaus discipline. Honey tones, exposed brick, olive accents, and cement floors create an interior that feels organic and considered in equal measure — proof that a small footprint can carry a strong point of view.',
+    descEs: 'Un apartamento compacto con una identidad clara a través de una pareja inesperada: calidez bohemia y disciplina Bauhaus. Tonos miel, ladrillo expuesto, acentos oliva y pisos de cemento crean un interior que se siente orgánico y reflexivo a partes iguales — prueba de que una huella pequeña puede sostener un punto de vista fuerte.',
+    images: [
+      { src: 'https://source.unsplash.com/KXr-fBrUFms/1200x900', tag: null },
     ],
   },
 
