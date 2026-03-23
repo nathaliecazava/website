@@ -457,6 +457,15 @@ nav.scrolled .nav-cta:hover {
   letter-spacing: 0.05em;
 }
 
+/* ─── Single project image (no before/after) ─── */
+
+.project-single-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
 /* ─── Before / After Comparison Slider ─── */
 
 .comparison-wrap {
